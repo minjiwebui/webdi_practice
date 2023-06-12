@@ -7,7 +7,7 @@
   font-family: "맑은고딕", sans-serif;
   background: #ffffff;
   color: #333333;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   word-break: keep-all;
 }
 ul {
