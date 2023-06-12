@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "맑은고딕", sans-serif;
+  background: #ffffff;
+  color: #333333;
+  /* outline: 1px solid red; */
+  word-break: keep-all;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  width: 100%;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  vertical-align: top;
+}
+nav{
+  width: 600px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+header ul a{
+  display: block;
+  text-align: center;
+  background: #ffffff;
+  padding: 10px;
+}
+.mainmenu{
+  position: relative;
+  width: 25%;
+}
+.submenu{
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+.inner .slideBox {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.slideWrap {
+  position: absolute;
+}
+.slide {
+  position: relative;
+}
+.slide p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background: lightpink;
+}
+.slide img {
+  vertical-align: top;
+}
+.inner .contents {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.tab {
+  width: 100%;
+  position: relative;
+}
+.tab > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.tab > ul li{
+  height: 30px;
+    line-height: 30px;
+    padding: 0px 20px;
+    margin: 0 0 0 2px;
+    font-weight: 600;
+}
+.tabbox{
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.tabbox > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.tabbox > ul > li{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.tabbox img{
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+}
+.tabbox.on{
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  height: 100%;
+}
+.banner,
+.link {
+  position: relative;
+}
+.banner h2,
+.link h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner h2 img,
+.link h2 img {
+  vertical-align: top;
+  height: 200px;
+}
+footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer img {
+  vertical-align: top;
+}
+footer .sns {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+body{
+  position: relative;
+}
+.popup{
+  display: none;
+}
+.popup button{
+  position: absolute;
+  top: 250px;
+  right: 20px;
+}
+.popup.on{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #000000;
+}
